@@ -21,7 +21,7 @@
     <![endif]-->
 
     <script id="__ENTRY__" type="application/json">
-      {".js":["rise/c9b45a6c.js"]}
+      {".js":["rise/b39d820a.js"]}
     </script>
 
     <script id="__REMOTE_ENTRIES__" type="application/json">
@@ -107,7 +107,7 @@
         }
 
         async function __fetchCourse(name) {
-          name = name ?? window.i18n.default
+          name = name == null ? window.i18n.default : name
           if (!window.i18n.available.includes(name)) {
             console.warn(`Could not load locale "${name}"`)
             name = window.i18n.available[0]
